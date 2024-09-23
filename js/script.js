@@ -67,14 +67,13 @@ donateBtnOne.addEventListener("click", function () {
   const historySection = document.getElementById("history-section");
 
   let div = document.createElement("div");
-  div.className = "border border-zinc-400 p-5 rounded-lg mb-3";
+  div.className = "border border-zinc-400 p-3 md:p-5 rounded-lg mb-3";
   div.innerHTML = `
     <h3 class="font-bold text-base lg:text-xl mb-3">
-          <span id="historyMoney">${donateOneValue}</span> Taka is
-          <span id="historyTitle">Donate for Flood at Noakhali, Bangladesh</span>
+          <span>${donateOneValue}</span> Taka is
+          <span>Donate for Flood at Noakhali, Bangladesh</span>
         </h3>
-        <!-- donate time -->
-        <p id="historyDate">Date: <span> ${new Date()}</span></p>
+        <p class="text-sm">Date: <span> ${new Date()}</span></p>
     `;
 
   historySection.append(div);
@@ -109,14 +108,13 @@ donateBtnTwo.addEventListener("click", function () {
   const historySection = document.getElementById("history-section");
 
   let div = document.createElement("div");
-  div.className = "border border-zinc-400 p-5 rounded-lg mb-3";
+  div.className = "border border-zinc-400 p-3 md:p-5 rounded-lg mb-3";
   div.innerHTML = `
     <h3 class="font-bold text-base lg:text-xl mb-3">
-          <span id="historyMoney">${donateTwoValue}</span> Taka is
-          <span id="historyTitle">Donate for Flood Relief in Feni,Bangladesh</span>
+          <span>${donateTwoValue}</span> Taka is
+          <span>Donate for Flood Relief in Feni,Bangladesh</span>
         </h3>
-        <!-- donate time -->
-        <p id="historyDate">Date: <span> ${new Date()}</span></p>
+        <p class="text-sm">Date: <span> ${new Date()}</span></p>
     `;
 
   historySection.append(div);
@@ -151,14 +149,13 @@ donateBtnThree.addEventListener("click", function () {
   const historySection = document.getElementById("history-section");
 
   let div = document.createElement("div");
-  div.className = "border border-zinc-400 p-5 rounded-lg mb-3";
+  div.className = "border border-zinc-400 p-3 md:p-5 rounded-lg mb-3";
   div.innerHTML = `
     <h3 class="font-bold text-base lg:text-xl mb-3">
-          <span id="historyMoney">${donateThreeValue}</span> Taka is
-          <span id="historyTitle">Aid for Injured in the Quota Movement</span>
+          <span>${donateThreeValue}</span> Taka is
+          <span>Aid for Injured in the Quota Movement</span>
         </h3>
-        <!-- donate time -->
-        <p id="historyDate">Date: <span> ${new Date()}</span></p>
+        <p class="text-sm">Date: <span> ${new Date()}</span></p>
     `;
 
   historySection.append(div);
