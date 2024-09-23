@@ -1,0 +1,128 @@
+// common function
+function getButtonById(id) {
+  return document.getElementById(id);
+}
+
+function getInputValueById(id) {
+  const value = document.getElementById(id).value;
+  return parseFloat(value);
+}
+
+// element
+const mainSection = document.getElementById("main-section");
+const historySection = document.getElementById("history-section");
+
+// button
+const donateBtn = getButtonById("donate-button");
+const historyBtn = getButtonById("history-button");
+
+// history button
+historyBtn.addEventListener("click", function () {
+  mainSection.classList.add("hidden");
+  historySection.classList.remove("hidden");
+
+  donateBtn.className = "";
+  donateBtn.className =
+    "bg-zinc-50 font-medium text-xs sm:text-lg py-2 px-3 sm:py-3 sm:px-8 rounded-lg border border-zinc-300";
+
+  historyBtn.className = "";
+  historyBtn.className =
+    "bg-btnBgColor font-semibold text-xs sm:text-lg py-2 px-3 sm:py-3 sm:px-8 rounded-lg";
+});
+
+// donate button
+donateBtn.addEventListener("click", function () {
+  mainSection.classList.remove("hidden");
+  historySection.classList.add("hidden");
+
+  donateBtn.className = "";
+  donateBtn.className =
+    "bg-btnBgColor font-semibold text-xs sm:text-lg py-2 px-3 sm:py-3 sm:px-8 rounded-lg";
+
+  historyBtn.className = "";
+  historyBtn.className =
+    "bg-zinc-50 font-medium text-xs sm:text-lg py-2 px-3 sm:py-3 sm:px-8 rounded-lg border border-zinc-300";
+});
+
+// donate button
+
+const donateBtnOne = getButtonById("donateBtnOne");
+
+donateBtnOne.addEventListener("click", function () {
+  const donateOneValue = getInputValueById("donateOneField");
+  const mainBalance = document.getElementById("main-balance");
+
+  if (!donateOneValue || donateOneValue < 0) {
+    return alert("Please enter a value number");
+  } else if (parseFloat(mainBalance.innerText) < donateOneValue) {
+    return alert("Insufficient Balance!");
+  } else {
+    document.getElementById('my_modal_1').showModal();
+  }
+
+  const mainBalanceNumber = parseFloat(mainBalance.innerText);
+  mainBalance.innerText = mainBalanceNumber - donateOneValue;
+
+  
+
+  let donateMoney = document.getElementById("donateOneMoney");
+
+  const num = Number(donateMoney.innerHTML) + donateOneValue;
+  donateMoney.innerHTML = "";
+  donateMoney.innerHTML += num;
+  document.getElementById("donateOneField").value = "";
+});
+
+const donateBtnTwo = getButtonById("donateBtnTwo");
+
+donateBtnTwo.addEventListener("click", function () {
+  const donateTwoValue = getInputValueById("donateTwoField");
+  const mainBalance = document.getElementById("main-balance");
+
+  if (!donateTwoValue || donateTwoValue < 0) {
+    return alert("Please enter a value number");
+  } else if (parseFloat(mainBalance.innerText) < donateTwoValue) {
+    return alert("Insufficient Balance!");
+  } else {
+    document.getElementById('my_modal_1').showModal();
+  }
+
+  const mainBalanceNumber = parseFloat(mainBalance.innerText);
+  mainBalance.innerText = mainBalanceNumber - donateTwoValue;
+
+  
+
+  let donateMoney = document.getElementById("donateTwoMoney");
+
+  const num = Number(donateMoney.innerHTML) + donateTwoValue;
+  donateMoney.innerHTML = "";
+  donateMoney.innerHTML += num;
+  document.getElementById("donateTwoField").value = "";
+});
+
+const donateBtnThree = getButtonById("donateBtnThree");
+
+donateBtnThree.addEventListener("click", function () {
+  const donateThreeValue = getInputValueById("donateThreeField");
+  const mainBalance = document.getElementById("main-balance");
+
+  if (!donateThreeValue || donateThreeValue < 0) {
+    return alert("Please enter a value number");
+  } else if (parseFloat(mainBalance.innerText) < donateThreeValue) {
+    return alert("Insufficient Balance!");
+  } else {
+    document.getElementById('my_modal_1').showModal();
+  }
+
+  const mainBalanceNumber = parseFloat(mainBalance.innerText);
+  mainBalance.innerText = mainBalanceNumber - donateThreeValue;
+
+  
+
+  let donateMoney = document.getElementById("donateThreeMoney");
+
+  const num = Number(donateMoney.innerHTML) + donateThreeValue;
+  donateMoney.innerHTML = "";
+  donateMoney.innerHTML += num;
+  document.getElementById("donateThreeField").value = "";
+});
