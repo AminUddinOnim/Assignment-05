@@ -50,7 +50,7 @@
           <div class="navbar-start">
             <!-- button blog -->
             <button
-              class="bg-btnBgColor font-semibold text-xs sm:text-lg py-2 px-4 sm:py-2 sm:px-6 rounded-lg"
+              class="bg-btnBgColor font-semibold text-sm sm:text-lg py-2 px-4 sm:py-2 sm:px-6 rounded-lg"
             >
               Blog
             </button>
@@ -62,7 +62,7 @@
                 src="./assets/logo.png"
                 alt="Logo"
               />
-              <p class="text-xs sm:text-lg font-semibold text-center">
+              <p class="text-sm sm:text-lg font-semibold text-center">
                 Donate Bangladesh
               </p>
             </div>
@@ -71,7 +71,7 @@
             <div class="flex items-center gap-1 sm:gap-3">
               <img class="w-6" src="./assets/coin.png" alt="Coin" />
               <p
-                class="font-medium text-xs sm:text-lg text-zinc-500 text-nowrap"
+                class="font-medium text-sm sm:text-lg text-zinc-500 text-nowrap"
               >
                 <span id="main-balance">5500</span> BDT
               </p>
@@ -86,13 +86,13 @@
       >
         <button
           id="donate-button"
-          class="bg-btnBgColor font-semibold text-xs sm:text-lg py-2 px-3 sm:py-3 sm:px-8 rounded-lg"
+          class="bg-btnBgColor font-semibold text-sm sm:text-lg py-2 px-3 sm:py-3 sm:px-8 rounded-lg"
         >
           Donation
         </button>
         <button
           id="history-button"
-          class="font-medium text-xs sm:text-lg py-2 px-3 sm:py-3 sm:px-8 rounded-lg border border-zinc-300 bg-slate-50"
+          class="font-medium text-sm sm:text-lg py-2 px-3 sm:py-3 sm:px-8 rounded-lg border border-zinc-300 bg-slate-50"
         >
           History
         </button>
@@ -134,7 +134,7 @@
           </p>
           <input
             id="donateOneField"
-            type="number"
+            type="text"
             placeholder="Write Donation Amount"
             class="input input-bordered w-full my-5 font-light text-sm lg:text-base"
           />
@@ -199,7 +199,7 @@
           </p>
           <input
             id="donateTwoField"
-            type="number"
+            type="text"
             placeholder="Write Donation Amount"
             class="input input-bordered w-full my-5 font-light text-sm lg:text-base"
           />
@@ -248,7 +248,7 @@
           </p>
           <input
             id="donateThreeField"
-            type="number"
+            type="text"
             placeholder="Write Donation Amount"
             class="input input-bordered w-full my-5 font-light text-sm lg:text-base"
           />
@@ -262,9 +262,16 @@
       </div>
     </main>
 
-    
-
-    
+    <!-- history section -->
+    <section class="w-11/12 mx-auto mt-10 hidden" id="history-section">
+      <!-- <div class="border border-zinc-400 p-5 rounded-lg">
+        <h3 class="font-bold text-base lg:text-xl mb-3">
+          <span id="historyMoney">96500</span> Taka is
+          <span id="historyTitle">Aid for Injured in the Quota Movement </span>
+        </h3>
+        <p id="historyDate">Date: <span></span></p>
+      </div> -->
+    </section>
 
     <!-- script file -->
     <script src="./js/script.js"></script>

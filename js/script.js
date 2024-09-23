@@ -57,13 +57,11 @@ donateBtnOne.addEventListener("click", function () {
   } else if (parseFloat(mainBalance.innerText) < donateOneValue) {
     return alert("Insufficient Balance!");
   } else {
-    document.getElementById('my_modal_1').showModal();
+    document.getElementById("my_modal_1").showModal();
   }
 
   const mainBalanceNumber = parseFloat(mainBalance.innerText);
   mainBalance.innerText = mainBalanceNumber - donateOneValue;
-
-  
 
   let donateMoney = document.getElementById("donateOneMoney");
 
@@ -71,6 +69,21 @@ donateBtnOne.addEventListener("click", function () {
   donateMoney.innerHTML = "";
   donateMoney.innerHTML += num;
   document.getElementById("donateOneField").value = "";
+
+  const historySection = document.getElementById("history-section");
+
+  let div = document.createElement("div");
+  div.className = "border border-zinc-400 p-5 rounded-lg mb-3";
+  div.innerHTML = `
+    <h3 class="font-bold text-base lg:text-xl mb-3">
+          <span id="historyMoney">${donateOneValue}</span> Taka is
+          <span id="historyTitle">Donate for Flood at Noakhali, Bangladesh</span>
+        </h3>
+        <!-- donate time -->
+        <p id="historyDate">Date: <span> ${new Date()}</span></p>
+    `;
+
+  historySection.append(div);
 });
 
 const donateBtnTwo = getButtonById("donateBtnTwo");
@@ -84,13 +97,11 @@ donateBtnTwo.addEventListener("click", function () {
   } else if (parseFloat(mainBalance.innerText) < donateTwoValue) {
     return alert("Insufficient Balance!");
   } else {
-    document.getElementById('my_modal_1').showModal();
+    document.getElementById("my_modal_1").showModal();
   }
 
   const mainBalanceNumber = parseFloat(mainBalance.innerText);
   mainBalance.innerText = mainBalanceNumber - donateTwoValue;
-
-  
 
   let donateMoney = document.getElementById("donateTwoMoney");
 
@@ -98,6 +109,23 @@ donateBtnTwo.addEventListener("click", function () {
   donateMoney.innerHTML = "";
   donateMoney.innerHTML += num;
   document.getElementById("donateTwoField").value = "";
+
+  // history added
+
+  const historySection = document.getElementById("history-section");
+
+  let div = document.createElement("div");
+  div.className = "border border-zinc-400 p-5 rounded-lg mb-3";
+  div.innerHTML = `
+    <h3 class="font-bold text-base lg:text-xl mb-3">
+          <span id="historyMoney">${donateTwoValue}</span> Taka is
+          <span id="historyTitle">Donate for Flood Relief in Feni,Bangladesh</span>
+        </h3>
+        <!-- donate time -->
+        <p id="historyDate">Date: <span> ${new Date()}</span></p>
+    `;
+
+  historySection.append(div);
 });
 
 const donateBtnThree = getButtonById("donateBtnThree");
@@ -111,13 +139,11 @@ donateBtnThree.addEventListener("click", function () {
   } else if (parseFloat(mainBalance.innerText) < donateThreeValue) {
     return alert("Insufficient Balance!");
   } else {
-    document.getElementById('my_modal_1').showModal();
+    document.getElementById("my_modal_1").showModal();
   }
 
   const mainBalanceNumber = parseFloat(mainBalance.innerText);
   mainBalance.innerText = mainBalanceNumber - donateThreeValue;
-
-  
 
   let donateMoney = document.getElementById("donateThreeMoney");
 
@@ -125,4 +151,21 @@ donateBtnThree.addEventListener("click", function () {
   donateMoney.innerHTML = "";
   donateMoney.innerHTML += num;
   document.getElementById("donateThreeField").value = "";
+
+  // history added
+
+  const historySection = document.getElementById("history-section");
+
+  let div = document.createElement("div");
+  div.className = "border border-zinc-400 p-5 rounded-lg mb-3";
+  div.innerHTML = `
+    <h3 class="font-bold text-base lg:text-xl mb-3">
+          <span id="historyMoney">${donateThreeValue}</span> Taka is
+          <span id="historyTitle">Aid for Injured in the Quota Movement</span>
+        </h3>
+        <!-- donate time -->
+        <p id="historyDate">Date: <span> ${new Date()}</span></p>
+    `;
+
+  historySection.append(div);
 });
