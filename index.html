@@ -42,9 +42,7 @@
   </head>
   <body class="font-lexend">
     <!-- header section -->
-    <header
-      class="backdrop-filter backdrop-blur-lg shadow sticky top-0"
-    >
+    <header class="backdrop-filter backdrop-blur-lg shadow sticky top-0">
       <!-- navbar -->
       <div class="bg-navBgColor py-3">
         <!-- navbar form daisy ui -->
@@ -87,22 +85,186 @@
         class="flex justify-center items-center gap-4 py-7 sm:py-10 bg-white opacity-90"
       >
         <button
-        id="donate-button"
+          id="donate-button"
           class="bg-btnBgColor font-semibold text-xs sm:text-lg py-2 px-3 sm:py-3 sm:px-8 rounded-lg"
         >
           Donation
         </button>
         <button
-        id="history-button"
+          id="history-button"
           class="font-medium text-xs sm:text-lg py-2 px-3 sm:py-3 sm:px-8 rounded-lg border border-zinc-300 bg-slate-50"
         >
           History
         </button>
       </div>
     </header>
+    <!-- main section -->
+    <main class="w-11/12 mx-auto my-8" id="main-section">
+      <!-- card - 1 -->
+      <div
+        class="flex flex-col lg:flex-row border border-zinc-300 p-8 rounded-lg"
+      >
+        <figure class="w-full lg:w-1/2">
+          <img
+            class="w-full lg:w-fit"
+            src="./assets/noakhali.png"
+            alt="Noakhali"
+          />
+        </figure>
+        <div class="w-full lg:w-1/2 mt-5 lg:mt-0">
+          <div
+            class="flex items-center gap-2 bg-zinc-200 w-fit py-1 px-3 rounded-md"
+          >
+            <img src="./assets/coin.png" alt="coin" />
+            <p class="font-normal text-base text-zinc-600">
+              <span id="donateOneMoney">0</span> BDT
+            </p>
+          </div>
+          <h3 class="mt-4 mb-5 font-bold text-lg lg:text-xl">
+            Donate for Flood at Noakhali, Bangladesh
+          </h3>
+          <!-- description -->
+          <p class="font-light text-base/7 text-zinc-600">
+            The recent floods in Noakhali, Bangladesh, have devastated
+            communities, affecting approximately 3.66 million people. Many are
+            stranded and in urgent need of aid. Organizations like Islamic
+            Relief and BRAC are actively seeking donations to provide essential
+            support, including food, water, and shelter. Your contributions can
+            help save lives during this crisis.
+          </p>
+          <input
+            id="donateOneField"
+            type="number"
+            placeholder="Write Donation Amount"
+            class="input input-bordered w-full my-5 font-light text-sm lg:text-base"
+          />
+
+          <button
+            id="donateBtnOne"
+            class="bg-btnBgColor py-3 rounded-lg w-full font-semibold text-base lg:text-lg"
+          >
+            Donate Now
+          </button>
+          <!-- modal -->
+          <dialog id="my_modal_1" class="modal">
+            <div class="modal-box flex flex-col text-center">
+              <h3 class="font-bold text-3xl mb-4">Congrats!</h3>
+              <div class="flex justify-center items-center">
+                <img class="w-8" src="./assets/coin.png" alt="coin" />
+              </div>
+              <p class="py-4 text-slate-500 text-sm">
+                You Have Donated for Humankind
+              </p>
+              <h3 class="font-bold text-xl">Successfully</h3>
+              <div class="flex justify-center items-center">
+                <div class="modal-action">
+                  <form method="dialog">
+                    <button class="btn">close confirmation</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </dialog>
+        </div>
+      </div>
+      <!-- card - 2 -->
+      <div
+        class="flex flex-col lg:flex-row border border-zinc-300 p-8 rounded-lg my-10"
+      >
+        <figure class="w-full lg:w-1/2">
+          <img class="w-full lg:w-fit" src="./assets/feni.png" alt="Feni" />
+        </figure>
+        <div class="w-full lg:w-1/2 mt-5 lg:mt-0">
+          <div
+            class="flex items-center gap-2 bg-zinc-200 w-fit py-1 px-3 rounded-md"
+          >
+            <img src="./assets/coin.png" alt="coin" />
+            <p class="font-normal text-base text-zinc-600">
+              <span id="donateTwoMoney">0</span> BDT
+            </p>
+          </div>
+          <h3 class="mt-4 mb-5 font-bold text-lg lg:text-xl">
+            Donate for Flood Relief in Feni,Bangladesh
+          </h3>
+          <!-- description -->
+          <p class="font-light text-base/7 text-zinc-600">
+            The recent floods in Feni, Bangladesh, have caused widespread
+            devastation, affecting thousands of families. Immediate assistance
+            is crucial for providing food, clean water, and shelter.
+            Organizations like BRAC and Islamic Relief are mobilizing relief
+            efforts. Your donations can help deliver essential supplies to those
+            in urgent need. Please contribute today.Every contribution counts
+            and can make a significant difference in the lives of those impacted
+            by this disaster.
+          </p>
+          <input
+            id="donateTwoField"
+            type="number"
+            placeholder="Write Donation Amount"
+            class="input input-bordered w-full my-5 font-light text-sm lg:text-base"
+          />
+          <button
+            id="donateBtnTwo"
+            class="bg-btnBgColor py-3 rounded-lg w-full font-semibold text-base lg:text-lg"
+          >
+            Donate Now
+          </button>
+        </div>
+      </div>
+      <!-- card - 3 -->
+      <div
+        class="flex flex-col lg:flex-row border border-zinc-300 p-8 rounded-lg"
+      >
+        <figure class="w-full lg:w-1/2">
+          <img
+            class="w-full lg:w-fit"
+            src="./assets/quota-protest.png"
+            alt="Noakhali"
+          />
+        </figure>
+        <div class="w-full lg:w-1/2 mt-5 lg:mt-0">
+          <div
+            class="flex items-center gap-2 bg-zinc-200 w-fit py-1 px-3 rounded-md"
+          >
+            <img src="./assets/coin.png" alt="coin" />
+            <p class="font-normal text-base text-zinc-600">
+              <span id="donateThreeMoney">0</span> BDT
+            </p>
+          </div>
+          <h3 class="mt-4 mb-5 font-bold text-lg lg:text-xl">
+            Aid for Injured in the Quota Movement
+          </h3>
+          <!-- description -->
+          <p class="font-light text-base/7 text-zinc-600">
+            The ongoing Quota Movement in Bangladesh has led to significant
+            injuries among protesters, with many requiring urgent medical
+            assistance. As clashes escalated, medical students and volunteers
+            have been providing critical care to those affected. Donations are
+            urgently needed to support injured individuals and facilitate
+            medical treatment. Organizations like Islamic Relief are mobilizing
+            resources for healthcare, rehabilitation, and support for the
+            victims. Your contributions can help ensure that those injured
+            receive the necessary care and aid during this turbulent time.
+          </p>
+          <input
+            id="donateThreeField"
+            type="number"
+            placeholder="Write Donation Amount"
+            class="input input-bordered w-full my-5 font-light text-sm lg:text-base"
+          />
+          <button
+            id="donateBtnThree"
+            class="bg-btnBgColor py-3 rounded-lg w-full font-semibold text-base lg:text-lg"
+          >
+            Donate Now
+          </button>
+        </div>
+      </div>
+    </main>
+
     
 
-     
+    
 
     <!-- script file -->
     <script src="./js/script.js"></script>
