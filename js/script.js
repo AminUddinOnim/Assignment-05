@@ -70,7 +70,7 @@ donateBtnOne.addEventListener("click", function () {
   div.className = "border border-zinc-400 p-3 md:p-5 rounded-lg mb-3";
   div.innerHTML = `
     <h3 class="font-bold text-base lg:text-xl mb-3">
-          <span>${donateOneValue}</span> Taka is
+          <span>${donateOneValue}</span> Taka is Donated for
           <span>Donate for Flood at Noakhali, Bangladesh</span>
         </h3>
         <p class="text-sm">Date: <span> ${new Date()}</span></p>
@@ -111,7 +111,7 @@ donateBtnTwo.addEventListener("click", function () {
   div.className = "border border-zinc-400 p-3 md:p-5 rounded-lg mb-3";
   div.innerHTML = `
     <h3 class="font-bold text-base lg:text-xl mb-3">
-          <span>${donateTwoValue}</span> Taka is
+          <span>${donateTwoValue}</span> Taka is Donated for
           <span>Donate for Flood Relief in Feni,Bangladesh</span>
         </h3>
         <p class="text-sm">Date: <span> ${new Date()}</span></p>
@@ -152,7 +152,7 @@ donateBtnThree.addEventListener("click", function () {
   div.className = "border border-zinc-400 p-3 md:p-5 rounded-lg mb-3";
   div.innerHTML = `
     <h3 class="font-bold text-base lg:text-xl mb-3">
-          <span>${donateThreeValue}</span> Taka is
+          <span>${donateThreeValue}</span> Taka is Donated for
           <span>Aid for Injured in the Quota Movement</span>
         </h3>
         <p class="text-sm">Date: <span> ${new Date()}</span></p>
